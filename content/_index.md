@@ -15,6 +15,7 @@ description: 'WMU''s Resident Hackerspace Since 1976.'
   </div>
 </div>
 <div class='hero-actions'>
+  <a href='/hackathon' class='join-button' style='background-color: #7c3aed;'>Hackathon March 21-22</a>
   <a href='/join' class='join-button'>Join the Club</a>
 </div>
 {{< /hero >}}
