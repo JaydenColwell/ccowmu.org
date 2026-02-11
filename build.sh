@@ -123,5 +123,6 @@ cp -r minutes/public/* public/minutes/
 echo "Verifying outputs..."
 test -f public/index.html || { echo "Missing public/index.html"; exit 1; }
 test -d public/minutes || { echo "Missing public/minutes"; exit 1; }
+test -f public/hackathon/index.html || { echo "Missing public/hackathon/index.html"; exit 1; }
 
 echo "Build OK: see ./public"
