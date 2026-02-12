@@ -22,8 +22,8 @@ description: 'A 24-hour coding event featuring expert talks, prizes, food, and c
   </div>
 </div>
 <div class='hero-actions'>
-  <a href='#register' class='join-button' style='background-color: #7c3aed;'>Register Now</a>
-  <a href='#info' class='join-button'>Learn More</a>
+  <a href='https://forms.gle/KAZKXe6GuR47cZvG9' class='join-button' style='background-color: #7c3aed;'>Register Now</a>
+  <a href='https://cclub.cs.wmich.edu/wiki/Main_Page' class='join-button'>Learn More</a>
 </div>
 
 <section class='info-section' style='margin-top: 4rem;'>
