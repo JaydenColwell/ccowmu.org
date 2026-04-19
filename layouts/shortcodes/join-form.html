@@ -1,0 +1,54 @@
+<div class="form-section">
+    <form action="https://formspree.io/f/mojywlep" method="POST" class="interest-form">
+
+    <div class="form-grid">
+        <h3>Interested in joining?</h3>
+        <!-- Name -->
+        <label class="full-width">
+        Name *
+        <input type="text" name="name" required>
+        </label>
+
+        <!-- Email -->
+        <label class="full-width">
+        Email *
+        <input type="email" name="email" required>
+        </label>
+
+        <!-- Student radio -->
+        <fieldset class="full-width">
+        <legend>Are you a student? *</legend>
+
+        <label>
+            <input type="radio" name="student" value="yes" required>
+            Yes
+        </label>
+
+        <label>
+            <input type="radio" name="student" value="no">
+            No
+        </label>
+        </fieldset>
+
+        <!-- Major (hidden) -->
+        <div id="major-field" class="full-width" style="display:none;">
+        <label>
+            Major *
+            <input type="text" name="major" id="major-input">
+        </label>
+        </div>
+
+        <!-- Interests -->
+        <label class="full-width">
+        Interests (optional)
+        <textarea name="interests" rows="5"></textarea>
+        </label>
+
+        <!-- Button -->
+        <div class="form-actions full-width">
+        <button type="submit">Submit</button>
+        </div>
+
+    </div>
+    </form>
+</div>

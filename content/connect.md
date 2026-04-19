@@ -5,12 +5,12 @@ description: 'Connect with fellow members through our self-hosted Matrix chat se
 
 {{< page-header title="Connect & Community" subtitle="Connect with fellow members through our self-hosted Matrix chat server." >}}
 
-{{< element-intro >}}
-
 {{< join-steps >}}
 
-{{< rooms-grid >}}
+{{< element-intro >}}
 
 {{< guidelines >}}
+
+{{< rooms-grid >}}
 
 {{< alt-contact >}} 

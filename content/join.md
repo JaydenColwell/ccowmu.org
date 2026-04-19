@@ -7,6 +7,8 @@ description: 'Become part of Western Michigan University''s premier technical or
 
 {{< why-join >}}
 
+{{< join-form >}}
+
 {{< membership-info >}}
 
 {{< benefits >}}

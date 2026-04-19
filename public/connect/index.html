@@ -5,8 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="robots" content="noindex, nofollow">
-
 <title>Connect &amp; Community | CCAWMU</title>
 <meta name="description" content="Connect with fellow members through our self-hosted Matrix chat server.">
 
@@ -33,7 +31,8 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"></noscript> 
 </head>
 <body>
-    <header class='site-header'>
+    
+        <header class='site-header'>
     <nav class='navbar'>
         <div class='nav-container'>
             
@@ -46,12 +45,12 @@
             
             <ul class='nav-menu' id='nav-menu'>
                 <li class='nav-item'><a href='http://localhost:1313/' class='nav-link'>Home</a></li>
-                <li class='nav-item'><a href='http://localhost:1313/hackathon' class='nav-link' style='color: #a500e1;'>Hackathon</a></li>
-                <li class='nav-item'><a href='http://localhost:1313/minutes/' class='nav-link'>Minutes</a></li>
                 <li class='nav-item'><a href='http://localhost:1313/connect' class='nav-link'>Connect</a></li>
-                <li class='nav-item'><a href='https://cclub.cs.wmich.edu/chat' class='nav-link'>Chat</a></li>
+                <li class='nav-item'><a href='http://localhost:1313/join' class='nav-link'>Join</a></li>
                 <li class='nav-item'><a href='https://experiencewmu.wmich.edu/organization/computer-club-at-wmu/events' class='nav-link'>Events</a></li>
+                <li class='nav-item'><a href='https://cclub.cs.wmich.edu/chat' class='nav-link'>Chat</a></li>
                 <li class='nav-item'><a href='https://cclub.cs.wmich.edu/wiki/Main_Page' class='nav-link'>Wiki</a></li>
+                <li class='nav-item'><a href='http://localhost:1313/minutes/' class='nav-link'>Minutes</a></li>
             </ul>
 
             
@@ -60,8 +59,6 @@
                     <span class='theme-icon light'>☀</span>
                     <span class='theme-icon dark'>☾</span>
                 </button>
-                                
-                <a href='http://localhost:1313/join' class='nav-join-btn'>Join</a>
             </div>
 
             
@@ -72,13 +69,8 @@
     </nav>
 </header> 
 
-
     
-    <div class="uc-banner" role="status" aria-live="polite" style="background:#ffbf69;color:#1a1a1a;border-bottom:1px solid rgba(0,0,0,.2);margin-top:var(--header-height);">
-        <div class="container" style="padding:.6rem 2rem;text-align:center;font-weight:600;">
-            🚧 This site is under construction. Some content is still being migrated. 🚧
-        </div>
-    </div>
+
     
 
     <main class="main-content">
@@ -88,71 +80,6 @@
     <h1>Connect &amp; Community</h1>
     <p class='page-description'>Connect with fellow members through our self-hosted Matrix chat server.</p>
   </div>
-</section> 
-<section class="chat-intro">
-    <div class="container">
-        <div class="intro-card">
-            <div class="intro-header">
-                <div class="matrix-logo">⚡</div>
-                <div class="intro-info">
-                    <h2>Our Self-Hosted Matrix Server</h2>
-                    <p>Computer Club hosts our own Matrix chat server in Floyd Hall, WMU's engineering building. We use Element as our client for secure, decentralized communication.</p>
-                </div>
-            </div>
-            
-            <div class="intro-features">
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <span class="feature-icon">🔒</span>
-                        <div class="feature-content">
-                            <h3>End-to-End Encryption</h3>
-                            <p>Your messages are secure and private by default</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <span class="feature-icon">🌐</span>
-                        <div class="feature-content">
-                            <h3>Decentralized</h3>
-                            <p>Not controlled by any single company or entity</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <span class="feature-icon">💻</span>
-                        <div class="feature-content">
-                            <h3>Cross-Platform</h3>
-                            <p>Available on desktop, mobile, and web</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <span class="feature-icon">⚡</span>
-                        <div class="feature-content">
-                            <h3>Free & Open Source</h3>
-                            <p>No cost, no ads, just community</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <span class="feature-icon">🏠</span>
-                        <div class="feature-content">
-                            <h3>Self-Hosted</h3>
-                            <p>Runs on our own servers in Floyd Hall</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <span class="feature-icon">🔧</span>
-                        <div class="feature-content">
-                            <h3>Customizable</h3>
-                            <p>Bots, integrations, and member-built features</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section> 
 <section class="how-to-join">
     <div class="container">
@@ -205,90 +132,66 @@
         </div>
     </div>
 </section> 
-<section class="chat-rooms">
+<section class="chat-intro">
     <div class="container">
-        <h2>Our Chat Rooms</h2>
-        <p class="rooms-intro">
-            Our Matrix server hosts various topic-specific rooms for different discussions and activities:
-        </p>
-        <div class="rooms-grid">
-            <div class="room-card">
-                <div class="room-icon">👥</div>
-                <h3>#geeks</h3>
-                <p>Our main discussion room where new members are welcomed and general topics are discussed.</p>
-                <div class="room-meta">
-                    <span class="room-type">Main</span>
-                    <span class="room-members">All Members</span>
+        <div class="intro-card">
+            <div class="intro-header">
+                <div class='matrix-logo'><img src='http://localhost:1313/images/logo-mark-primary.svg' alt='Matrix Chat' class='matrix-logo'></div>
+                <div class="intro-info">
+                    <h2>Our Self-Hosted Matrix Server</h2>
+                    <p>Computer Club hosts our own Matrix chat server in Floyd Hall, WMU's engineering building. We use Element as our client for secure, decentralized communication.</p>
                 </div>
             </div>
-
-            <div class="room-card">
-                <div class="room-icon">📢</div>
-                <h3>#officers</h3>
-                <p>Important club updates, announcements, and official information from leadership.</p>
-                <div class="room-meta">
-                    <span class="room-type">Announcements</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">💻</div>
-                <h3>#projects</h3>
-                <p>Share your projects, collaborate on code, and discuss development ideas.</p>
-                <div class="room-meta">
-                    <span class="room-type">Public</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">🖼️</div>
-                <h3>#img</h3>
-                <p>Share images, memes, screenshots, and visual content with the community.</p>
-                <div class="room-meta">
-                    <span class="room-type">Media</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">💰</div>
-                <h3>#money</h3>
-                <p>Financial advice, budgeting tips, and money-related discussions.</p>
-                <div class="room-meta">
-                    <span class="room-type">Public</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">💼</div>
-                <h3>#jobs</h3>
-                <p>Job opportunities, career advice, internship postings, and professional development.</p>
-                <div class="room-meta">
-                    <span class="room-type">Public</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">🚩</div>
-                <h3>#ctf</h3>
-                <p>Capture The Flag competitions, cybersecurity challenges, and hacking discussions.</p>
-                <div class="room-meta">
-                    <span class="room-type">Security</span>
-                    <span class="room-members">All Members</span>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <div class="room-icon">➕</div>
-                <h3>...and more!</h3>
-                <p>Dozens of additional specialized channels for various topics, interests, and projects.</p>
-                <div class="room-meta">
-                    <span class="room-type">Various</span>
-                    <span class="room-members">Discover More</span>
+            
+            <div class="intro-features">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>End-to-End Encryption</h3>
+                            <p>Your messages are secure and private by default</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>Decentralized</h3>
+                            <p>Not controlled by any single company or entity</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>Cross-Platform</h3>
+                            <p>Available on desktop, mobile, and web</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>Free & Open Source</h3>
+                            <p>No cost, no ads, just community</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>Self-Hosted</h3>
+                            <p>Runs on our own servers in Floyd Hall</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon"></span>
+                        <div class="feature-content">
+                            <h3>Customizable</h3>
+                            <p>Bots, integrations, and member-built features</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,6 +226,95 @@
         </div>
     </div>
 </section> 
+<section class="chat-rooms">
+    <div class="container">
+        <h2>Our Chat Rooms</h2>
+        <p class="rooms-intro">
+            Our Matrix server hosts various topic-specific rooms for different discussions and activities:
+        </p>
+        <div class="rooms-grid">
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#geeks:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#geeks</h3>
+                <p>Our main discussion room where new members are welcomed and general topics are discussed.</p>
+                <div class="room-meta">
+                    <span class="room-type">Main</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#officers:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#officers</h3>
+                <p>Important club updates, announcements, and official information from leadership.</p>
+                <div class="room-meta">
+                    <span class="room-type">Announcements</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#projects:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#projects</h3>
+                <p>Share your projects, collaborate on code, and discuss development ideas.</p>
+                <div class="room-meta">
+                    <span class="room-type">Public</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#img:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#img</h3>
+                <p>Share images, memes, screenshots, and visual content with the community.</p>
+                <div class="room-meta">
+                    <span class="room-type">Media</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#money:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#money</h3>
+                <p>Financial advice, budgeting tips, and money-related discussions.</p>
+                <div class="room-meta">
+                    <span class="room-type">Public</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#jobs:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#jobs</h3>
+                <p>Job opportunities, career advice, internship postings, and professional development.</p>
+                <div class="room-meta">
+                    <span class="room-type">Public</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <a href="https://cclub.cs.wmich.edu/chat/#/room/#ctf:cclub.cs.wmich.edu" class="room-card">
+                <div class="room-icon"></div>
+                <h3>#ctf</h3>
+                <p>Capture The Flag competitions, cybersecurity challenges, and hacking discussions.</p>
+                <div class="room-meta">
+                    <span class="room-type">Security</span>
+                    <span class="room-members">All Members</span>
+                </div>
+            </a>
+
+            <div class="room-card">
+                <div class="room-icon"></div>
+                <h3>...and more!</h3>
+                <p>Dozens of additional specialized channels for various topics, interests, and projects.</p>
+                <div class="room-meta">
+                    <span class="room-type">Various</span>
+                    <span class="room-members">Discover More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
 <section class="alternative-contact">
     <div class="container">
         <div class="contact-card">
@@ -330,32 +322,32 @@
             <p>While our Matrix chat is the best way to stay connected, you can also reach us through:</p>
             
             <div class="contact-options">
-                <div class="contact-option">
+                <a href="mailto:rso_cclub@wmich.edu" class="contact-option">
                     <span class="contact-icon">📧</span>
                     <div class="contact-info">
                         <h3>Email</h3>
                         <p>For official inquiries and important matters</p>
-                        <a href="mailto:rso_cclub@wmich.edu">rso_cclub@wmich.edu</a>
+                        <span class="contact-highlight">rso_cclub@wmich.edu</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="contact-option">
+                <a href="https://maps.app.goo.gl/vCTjHYr64J75vtCj6" class="contact-option">
                     <span class="contact-icon">🏫</span>
                     <div class="contact-info">
                         <h3>In Person</h3>
                         <p>Join us at our weekly meetings</p>
                         <span class="contact-detail">Thursdays @ 6:00 PM, 2225 Kohrman Hall</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="contact-option">
+                <a href="https://github.com/ccowmu" class="contact-option">
                     <span class="contact-icon">⚡</span>
                     <div class="contact-info">
                         <h3>GitHub</h3>
                         <p>Collaborate on code and contribute to projects</p>
-                        <a href="https://github.com/ccowmu" target="_blank" rel="noopener">@ccowmu</a>
+                        <span class="contact-highlight">@ccowmu</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -371,7 +363,7 @@
             
             <div class='footer-section footer-buttons-section'>
                 <h3>Connect With Us</h3>
-                <div class='footer-buttons'>
+                <div class='footer-list-with-icons'>
                     <a href='mailto:rso_cclub@wmich.edu' class='footer-button'>
                         <span class='button-icon'><img src='http://localhost:1313/images/mail.png' alt='Email' class='footer-icon'></span><span>Email Us</span>
                     </a>
@@ -396,11 +388,11 @@
             
             <div class='footer-section footer-buttons-section'>
                 <h3>Quick Links</h3>
-                <div class='footer-buttons'>
-                    <a href='http://localhost:1313/minutes/' class='footer-button'><span class='button-icon'>📋</span><span>Meeting Minutes</span></a>
-                    <a href='https://experiencewmu.wmich.edu/organization/computer-club-at-wmu/events' class='footer-button'><span class='button-icon'>📅</span><span>Upcoming Events</span></a>
-                    <a href='https://cclub.cs.wmich.edu/wiki/Main_Page' class='footer-button'><span class='button-icon'>📚</span><span>Club Wiki</span></a>
-                    <a href='http://localhost:1313/index.xml' class='footer-button' target='_blank' rel='noopener'><span class='button-icon'>📡</span><span>RSS Feed</span></a>
+                <div class='footer-list'>
+                    <a href='http://localhost:1313/minutes/' class='footer-button'><span class='button-icon'></span><span>Meeting Minutes</span></a>
+                    <a href='https://experiencewmu.wmich.edu/organization/computer-club-at-wmu/events' class='footer-button'><span class='button-icon'></span><span>Upcoming Events</span></a>
+                    <a href='https://cclub.cs.wmich.edu/wiki/Main_Page' class='footer-button'><span class='button-icon'></span><span>Club Wiki</span></a>
+                    <a href='http://localhost:1313/index.xml' class='footer-button' target='_blank' rel='noopener'><span class='button-icon'></span><span>RSS Feed</span></a>
                 </div>
             </div>
         </div>
@@ -408,7 +400,7 @@
         
         <div class='footer-bottom'>
             <div class='footer-text'>
-                <p>&copy; 2025 Computer Club at Western Michigan University</p>
+                <p>&copy; 2026 Computer Club at Western Michigan University</p>
                 <p class='footer-motto'>Built with ❤️, caffeine, and way too many late nights</p>
             </div>
             <div class='footer-ascii'>

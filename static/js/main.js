@@ -24,7 +24,8 @@
             initNavigation();
             initSmoothScrolling();
             initPageFeatures();
-            
+            initSlideshow();
+            initInterestForm();
             // Lazy load non-critical scripts
             lazyLoadScripts();
         });
@@ -545,6 +546,65 @@ function syncStreamHeightToAbout() {
     if (aboutHeight > 0) {
         streamContent.style.height = `${aboutHeight}px`;
     }
+}
+
+function initSlideshow() {
+    const slides = document.querySelectorAll(".slide");
+    const caption = document.querySelector(".slideshow .image-caption");
+
+    if (!slides.length || !caption) return;
+
+    let index = 0;
+
+    function updateSlideCaption(slide) {
+        caption.textContent = slide?.alt || "";
+    }
+
+    // ✅ NOW it's safe
+    updateSlideCaption(slides[index]);
+
+    setInterval(() => {
+        slides[index].classList.remove("active");
+
+        index = (index + 1) % slides.length;
+
+        slides[index].classList.add("active");
+
+        updateSlideCaption(slides[index]);
+
+    }, 6000);
+}
+
+function initInterestForm() {
+  const studentRadios = document.querySelectorAll('input[name="student"]');
+  const majorField = document.getElementById("major-field");
+  const majorInput = document.getElementById("major-input");
+
+  if (!studentRadios.length || !majorField || !majorInput) return;
+
+  function updateMajorField() {
+    const selected = document.querySelector('input[name="student"]:checked');
+
+    if (selected && selected.value === "yes") {
+      majorField.style.display = "block";
+      majorInput.setAttribute("required", "required");
+    } else {
+      majorField.style.display = "none";
+      majorInput.removeAttribute("required");
+      majorInput.value = "";
+    }
+  }
+
+  studentRadios.forEach(radio => {
+    radio.addEventListener("change", updateMajorField);
+  });
+}
+
+function updateSlideCaption(slide) {
+  const caption = document.querySelector(".slideshow .image-caption");
+  if (!caption || !slide) return;
+
+  caption.textContent = slide.alt || "";
 }
 
 // Simple debounce utility

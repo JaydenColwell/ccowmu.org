@@ -4,7 +4,11 @@
     {{ partial "head.html" . }}
 </head>
 <body>
-    {{ partial "header.html" . }}
+    {{ if .IsHome }}
+        {{ partial "header.html" . }}
+    {{ else }}
+        {{ partial "headerwithhome.html" . }}
+    {{ end }}
 
     {{ if .Site.Params.underConstruction }}
     <div class="uc-banner" role="status" aria-live="polite" style="background:#ffbf69;color:#1a1a1a;border-bottom:1px solid rgba(0,0,0,.2);margin-top:var(--header-height);">
