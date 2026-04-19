@@ -1,0 +1,6 @@
+[build]
+  command = "hugo && hugo -s minutes && mkdir -p public/minutes && cp -r minutes/public/* public/minutes/"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.123.0"
